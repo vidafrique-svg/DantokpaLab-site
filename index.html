@@ -3,72 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DantokpaLab — Fashion Store</title>
+  <title>DantokpaLab — African Luxury Fashion</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .serif {
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+  </style>
 </head>
 
-<body class="bg-[#fffdf3] text-[#3b3028]">
+<body class="bg-[#f8f3e8] text-[#241a14]">
 
   <!-- HEADER -->
-  <header class="sticky top-0 z-50 border-b border-[#f2e6cf] bg-[#fffdf3]/95 backdrop-blur">
+  <header class="fixed top-0 z-50 w-full border-b border-[#d8c5aa]/60 bg-[#f8f3e8]/90 backdrop-blur-md">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-      <a href="#" class="flex items-center gap-3">
-        <img src="logo-dantokpalab.png" alt="Logo DantokpaLab" class="h-16 w-auto" />
+      <a href="#">
+        <img src="2.png" alt="Logo DantokpaLab" class="h-16 w-auto" />
       </a>
 
-      <nav class="hidden gap-8 text-sm font-bold md:flex">
-        <a href="#histoire" class="hover:text-[#f28a2e]">Histoire</a>
-        <a href="#collections" class="hover:text-[#ffd414]">Collections</a>
-        <a href="#heritage" class="hover:text-[#6b4aa0]">Héritage</a>
-        <a href="#contact" class="hover:text-[#e85d25]">Contact</a>
+      <nav class="hidden items-center gap-9 text-xs font-semibold uppercase tracking-[0.25em] md:flex">
+        <a href="#maison" class="hover:text-[#a06a35]">La maison</a>
+        <a href="#collection" class="hover:text-[#a06a35]">Collection</a>
+        <a href="#heritage" class="hover:text-[#a06a35]">Héritage</a>
+        <a href="#contact" class="hover:text-[#a06a35]">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="relative overflow-hidden px-6 py-20 md:py-28">
-    <div class="absolute left-8 top-20 h-20 w-20 rounded-full bg-[#ffd414]/40 blur-xl"></div>
-    <div class="absolute bottom-10 right-10 h-28 w-28 rounded-full bg-[#f28a2e]/30 blur-xl"></div>
+  <section class="relative min-h-screen overflow-hidden pt-28">
+    <div class="absolute inset-0">
+      <img src="IMG_8080.PNG" alt="Création DantokpaLab" class="h-full w-full object-cover opacity-35" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#241a14]/90 via-[#241a14]/65 to-[#f8f3e8]/20"></div>
+    </div>
 
-    <div class="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
-      <div>
-        <p class="mb-4 text-sm font-black uppercase tracking-[0.35em] text-[#e85d25]">
-          Fashion Store · Cotonou · Afrique
+    <div class="relative mx-auto flex min-h-[85vh] max-w-7xl items-center px-6">
+      <div class="max-w-3xl text-white">
+        <p class="mb-5 text-xs font-semibold uppercase tracking-[0.45em] text-[#d6a96a]">
+          African luxury fashion house
         </p>
 
-        <h1 class="mb-6 text-5xl font-black leading-tight md:text-7xl">
-          Le marché africain en mouvement.
+        <h1 class="serif mb-8 text-5xl leading-tight md:text-7xl">
+          L’âme du marché africain, réinventée pour le monde.
         </h1>
 
-        <p class="mb-8 max-w-xl text-lg leading-8 text-[#5e5148]">
-          Née de l’héritage du mythique marché Dantokpa à Cotonou,
-          DantokpaLab célèbre les tissus africains, les rencontres, la couleur
-          et l’élégance contemporaine.
+        <p class="mb-10 max-w-2xl text-lg leading-9 text-[#f3e6d3]">
+          Née de l’héritage du marché Dantokpa à Cotonou, DantokpaLab transforme
+          la mémoire du textile africain en créations contemporaines, élégantes
+          et intemporelles.
         </p>
 
         <div class="flex flex-wrap gap-4">
-          <a href="#collections"
-             class="rounded-full bg-[#e85d25] px-8 py-4 text-sm font-black text-white shadow-lg hover:bg-[#c94c1e]">
-            Découvrir la marque
+          <a href="#collection"
+             class="border border-[#d6a96a] bg-[#d6a96a] px-8 py-4 text-xs font-bold uppercase tracking-[0.25em] text-[#241a14] hover:bg-transparent hover:text-[#d6a96a]">
+            Découvrir
           </a>
 
           <a href="https://www.instagram.com/dantokpalab"
              target="_blank"
-             class="rounded-full border-2 border-[#3b3028] px-8 py-4 text-sm font-black hover:bg-[#3b3028] hover:text-white">
+             class="border border-white px-8 py-4 text-xs font-bold uppercase tracking-[0.25em] text-white hover:bg-white hover:text-[#241a14]">
             Instagram
           </a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="rounded-[2.5rem] bg-[#fff1c9] p-8 shadow-xl">
-        <div class="flex min-h-[420px] items-center justify-center rounded-[2rem] border-4 border-dashed border-[#f28a2e] bg-white p-8 text-center">
-          <div>
-            <img src="logo-dantokpalab.png" alt="DantokpaLab" class="mx-auto mb-6 max-h-48 w-auto" />
-            <p class="text-xl font-black text-[#3b3028]">
-              Adire · Aso-oke · Tissage africain
+  <!-- MAISON -->
+  <section id="maison" class="px-6 py-28">
+    <div class="mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-2">
+      <div>
+        <p class="mb-4 text-xs font-bold uppercase tracking-[0.4em] text-[#a06a35]">
+          La maison
+        </p>
+
+        <h2 class="serif mb-8 text-4xl leading-tight md:text-6xl">
+          Une élégance africaine entre mémoire, matière et mouvement.
+        </h2>
+
+        <p class="mb-6 text-lg leading-9 text-[#5a4638]">
+          DantokpaLab fait voyager l’esprit du mythique marché Dantokpa au-delà
+          de ses frontières. La marque célèbre la richesse des tissus traditionnels
+          africains, le métissage des cultures et la chaleur des rencontres.
+        </p>
+
+        <p class="text-lg leading-9 text-[#5a4638]">
+          Chaque création combine savoir-faire ancestral et vision contemporaine,
+          à travers des matières emblématiques comme l’Adire et l’Aso-oke.
+        </p>
+      </div>
+
+      <div class="grid gap-5">
+        <img src="IMG_8081.PNG" alt="Pièce DantokpaLab" class="h-[520px] w-full object-cover shadow-2xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section id="collection" class="bg-[#241a14] px-6 py-28 text-white">
+    <div class="mx-auto max-w-7xl">
+      <div class="mb-16 text-center">
+        <p class="mb-4 text-xs font-bold uppercase tracking-[0.4em] text-[#d6a96a]">
+          Collection
+        </p>
+
+        <h2 class="serif text-4xl leading-tight md:text-6xl">
+          Matières nobles. Coupes contemporaines. Héritage vivant.
+        </h2>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="group overflow-hidden bg-[#f8f3e8] text-[#241a14]">
+          <img src="IMG_8082.PNG" alt="Adire" class="h-[420px] w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div class="p-8">
+            <h3 class="serif mb-3 text-3xl">Adire</h3>
+            <p class="leading-7 text-[#5a4638]">
+              Une matière expressive, graphique et profondément enracinée dans
+              l’histoire textile africaine.
             </p>
-            <p class="mt-3 text-sm text-[#6f6259]">
-              Une Afrique créative, joyeuse et élégante à porter.
+          </div>
+        </div>
+
+        <div class="group overflow-hidden bg-[#f8f3e8] text-[#241a14]">
+          <img src="IMG_8083.PNG" alt="Aso-oke" class="h-[420px] w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div class="p-8">
+            <h3 class="serif mb-3 text-3xl">Aso-oke</h3>
+            <p class="leading-7 text-[#5a4638]">
+              Un tissu de prestige, issu du tissage traditionnel, symbole de
+              transmission et d’élégance.
+            </p>
+          </div>
+        </div>
+
+        <div class="group overflow-hidden bg-[#f8f3e8] text-[#241a14]">
+          <img src="IMG_8084.jpg" alt="Création contemporaine" class="h-[420px] w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div class="p-8">
+            <h3 class="serif mb-3 text-3xl">Silhouettes</h3>
+            <p class="leading-7 text-[#5a4638]">
+              Des pièces élégantes, fluides et modernes, pensées pour une Afrique
+              créative et ouverte sur le monde.
             </p>
           </div>
         </div>
@@ -76,146 +154,88 @@
     </div>
   </section>
 
-  <!-- HISTOIRE -->
-  <section id="histoire" class="bg-[#6b4aa0] px-6 py-20 text-white">
-    <div class="mx-auto max-w-5xl text-center">
-      <p class="mb-4 text-sm font-black uppercase tracking-[0.35em] text-[#ffd414]">
-        Notre histoire
-      </p>
-
-      <h2 class="mb-8 text-4xl font-black md:text-5xl">
-        De Dantokpa au monde.
-      </h2>
-
-      <p class="mx-auto max-w-3xl text-lg leading-9 text-[#fff7df]">
-        DantokpaLab fait voyager l’esprit du marché africain au-delà de ses
-        frontières. La marque transforme la mémoire du textile africain en
-        créations contemporaines, entre tradition, métissage et modernité.
-      </p>
-    </div>
-  </section>
-
-  <!-- COLLECTIONS -->
-  <section id="collections" class="px-6 py-20">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-12 text-center">
-        <p class="mb-3 text-sm font-black uppercase tracking-[0.35em] text-[#f28a2e]">
-          Nos matières
-        </p>
-        <h2 class="text-4xl font-black md:text-5xl">
-          Des tissus qui racontent une histoire.
-        </h2>
-      </div>
-
-      <div class="grid gap-8 md:grid-cols-3">
-        <div class="rounded-[2rem] bg-white p-8 shadow-lg border-t-8 border-[#ffd414]">
-          <h3 class="mb-4 text-2xl font-black">Adire</h3>
-          <p class="leading-7 text-[#5e5148]">
-            Une matière expressive, graphique et vivante, porteuse d’identité et
-            de créativité africaine.
-          </p>
-        </div>
-
-        <div class="rounded-[2rem] bg-white p-8 shadow-lg border-t-8 border-[#f28a2e]">
-          <h3 class="mb-4 text-2xl font-black">Aso-oke</h3>
-          <p class="leading-7 text-[#5e5148]">
-            Un tissu prestigieux issu du tissage africain traditionnel, symbole
-            de transmission et d’élégance.
-          </p>
-        </div>
-
-        <div class="rounded-[2rem] bg-white p-8 shadow-lg border-t-8 border-[#6b4aa0]">
-          <h3 class="mb-4 text-2xl font-black">Créations modernes</h3>
-          <p class="leading-7 text-[#5e5148]">
-            Des pièces colorées, fluides et contemporaines pour porter l’Afrique
-            avec style au quotidien.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- HERITAGE -->
-  <section id="heritage" class="bg-[#fff1c9] px-6 py-20">
-    <div class="mx-auto grid max-w-7xl items-center gap-10 md:grid-cols-2">
-      <div>
-        <p class="mb-4 text-sm font-black uppercase tracking-[0.35em] text-[#e85d25]">
+  <section id="heritage" class="px-6 py-28">
+    <div class="mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-2">
+      <div class="order-2 md:order-1">
+        <img src="IMG_8084 2.jpg" alt="Héritage DantokpaLab" class="h-[620px] w-full object-cover shadow-2xl" />
+      </div>
+
+      <div class="order-1 md:order-2">
+        <p class="mb-4 text-xs font-bold uppercase tracking-[0.4em] text-[#a06a35]">
           Héritage familial
         </p>
 
-        <h2 class="mb-6 text-4xl font-black md:text-5xl">
-          Une marque portée par un père et sa fille.
+        <h2 class="serif mb-8 text-4xl leading-tight md:text-6xl">
+          Une maison portée par un père et sa fille.
         </h2>
 
-        <p class="mb-6 text-lg leading-8 text-[#5e5148]">
+        <p class="mb-6 text-lg leading-9 text-[#5a4638]">
           Fondée par <strong>Cakpo Thomas</strong>, avec sa fille
           <strong>Oriane Cakpo</strong>, DantokpaLab perpétue un héritage familial
           sacré : celui du textile, de la transmission et de la fierté culturelle.
         </p>
 
-        <p class="text-lg leading-8 text-[#5e5148]">
+        <p class="text-lg leading-9 text-[#5a4638]">
           Plus qu’une marque, DantokpaLab est une passerelle entre les générations :
-          une manière de préserver les racines tout en imaginant une Afrique
-          créative, moderne et ouverte sur le monde.
+          une mémoire familiale transformée en vision créative, élégante et
+          contemporaine.
         </p>
-      </div>
-
-      <div class="rounded-[2.5rem] bg-[#e85d25] p-8 text-white shadow-xl">
-        <p class="mb-6 text-3xl font-black leading-tight">
-          “L’âme du marché africain, réinventée pour le monde.”
-        </p>
-        <p class="text-[#fff1c9]">DantokpaLab</p>
       </div>
     </div>
   </section>
 
-  <!-- MANIFESTE -->
-  <section class="px-6 py-20">
-    <div class="mx-auto max-w-4xl text-center">
-      <p class="mb-4 text-sm font-black uppercase tracking-[0.35em] text-[#6b4aa0]">
+  <!-- EDITORIAL -->
+  <section class="bg-[#efe2cf] px-6 py-28">
+    <div class="mx-auto max-w-5xl text-center">
+      <p class="mb-5 text-xs font-bold uppercase tracking-[0.4em] text-[#a06a35]">
         Manifeste
       </p>
 
-      <h2 class="mb-8 text-4xl font-black md:text-5xl">
-        Une Afrique élégante, métissée et en mouvement.
+      <h2 class="serif mb-8 text-4xl leading-tight md:text-6xl">
+        DantokpaLab, c’est le marché africain en mouvement.
       </h2>
 
-      <p class="text-lg leading-9 text-[#5e5148]">
-        Entre tradition et modernité, DantokpaLab sublime des matières
-        d’exception comme l’Adire et l’Aso-oke. Chaque création combine
-        savoir-faire ancestral, chaleur des rencontres et vision contemporaine.
+      <p class="mx-auto max-w-3xl text-lg leading-9 text-[#5a4638]">
+        Une Afrique vivante, créative et élégante à porter. Entre tradition et
+        modernité, la marque révèle la beauté des matières, la puissance des
+        racines et la liberté des silhouettes contemporaines.
       </p>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="bg-[#3b3028] px-6 py-20 text-white">
-    <div class="mx-auto max-w-4xl text-center">
-      <h2 class="mb-6 text-4xl font-black">Contact</h2>
+  <section id="contact" class="bg-[#120d09] px-6 py-24 text-white">
+    <div class="mx-auto max-w-5xl text-center">
+      <img src="2.png" alt="Logo DantokpaLab" class="mx-auto mb-8 h-28 w-auto" />
 
-      <p class="mb-8 text-[#fff1c9]">
-        Pour une commande, une collaboration ou une demande d’information :
+      <h2 class="serif mb-6 text-4xl md:text-5xl">
+        Entrer dans l’univers DantokpaLab
+      </h2>
+
+      <p class="mb-10 text-[#d9c7af]">
+        Pour une commande, une collaboration ou une demande d’information.
       </p>
 
       <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
         <a href="mailto:dantokpalab@gmail.com"
-           class="rounded-full bg-[#ffd414] px-8 py-4 text-sm font-black text-[#3b3028] hover:bg-[#f28a2e] hover:text-white">
-          dantokpalab@gmail.com
+           class="border border-[#d6a96a] bg-[#d6a96a] px-8 py-4 text-xs font-bold uppercase tracking-[0.25em] text-[#120d09] hover:bg-transparent hover:text-[#d6a96a]">
+          Mail
         </a>
 
         <a href="https://www.instagram.com/dantokpalab"
            target="_blank"
-           class="rounded-full border-2 border-white px-8 py-4 text-sm font-black hover:bg-white hover:text-[#3b3028]">
-          @dantokpalab
+           class="border border-white px-8 py-4 text-xs font-bold uppercase tracking-[0.25em] text-white hover:bg-white hover:text-[#120d09]">
+          Instagram
         </a>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-[#241b16] px-6 py-8 text-center text-sm text-[#f2e6cf]">
-    <p>© 2026 DantokpaLab. Tous droits réservés.</p>
-    <p class="mt-2">Fondé par Cakpo Thomas · Avec Oriane Cakpo</p>
+  <footer class="bg-[#0b0705] px-6 py-8 text-center text-xs uppercase tracking-[0.25em] text-[#bba88f]">
+    <p>© 2026 DantokpaLab — African Luxury Fashion</p>
+    <p class="mt-3 normal-case tracking-normal">Fondé par Cakpo Thomas · Avec Oriane Cakpo</p>
   </footer>
 
 </body>
