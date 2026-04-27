@@ -7,39 +7,38 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    .serif {
-      font-family: Georgia, 'Times New Roman', serif;
-    }
+    html { scroll-behavior: smooth; }
+    .serif { font-family: Georgia, 'Times New Roman', serif; }
   </style>
 </head>
 
-<body class="bg-[#f8f3e8] text-[#241a14]">
+<body class="bg-[#f7f1e7] text-[#17120e]">
 
   <!-- HEADER -->
-  <header class="fixed top-0 z-50 w-full border-b border-[#d8c5aa]/60 bg-[#f8f3e8]/90 backdrop-blur-md">
+  <header class="fixed top-0 z-50 w-full border-b border-white/10 bg-black/95 backdrop-blur-md">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
       <a href="#">
         <img src="2.png" alt="Logo DantokpaLab" class="h-16 w-auto" />
       </a>
 
-      <nav class="hidden items-center gap-9 text-xs font-semibold uppercase tracking-[0.25em] md:flex">
-        <a href="#maison" class="hover:text-[#a06a35]">La maison</a>
-        <a href="#collection" class="hover:text-[#a06a35]">Collection</a>
-        <a href="#heritage" class="hover:text-[#a06a35]">Héritage</a>
-        <a href="#contact" class="hover:text-[#a06a35]">Contact</a>
+      <nav class="hidden items-center gap-9 text-xs font-semibold uppercase tracking-[0.25em] text-white md:flex">
+        <a href="#maison" class="hover:text-[#d6a96a]">La maison</a>
+        <a href="#collection" class="hover:text-[#d6a96a]">Collection</a>
+        <a href="#heritage" class="hover:text-[#d6a96a]">Héritage</a>
+        <a href="#contact" class="hover:text-[#d6a96a]">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="relative min-h-screen overflow-hidden pt-28">
+  <section class="relative min-h-screen overflow-hidden pt-28 bg-black">
     <div class="absolute inset-0">
-      <img src="IMG_8080.PNG" alt="Création DantokpaLab" class="h-full w-full object-cover opacity-35" />
-      <div class="absolute inset-0 bg-gradient-to-r from-[#241a14]/90 via-[#241a14]/65 to-[#f8f3e8]/20"></div>
+      <img
+        src="Gemini_Generated_Image_2uotfr2uotfr2uot.png"
+        alt="Univers DantokpaLab"
+        class="h-full w-full object-cover opacity-55"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-black via-black/75 to-black/25"></div>
     </div>
 
     <div class="relative mx-auto flex min-h-[85vh] max-w-7xl items-center px-6">
@@ -52,7 +51,7 @@
           L’âme du marché africain, réinventée pour le monde.
         </h1>
 
-        <p class="mb-10 max-w-2xl text-lg leading-9 text-[#f3e6d3]">
+        <p class="mb-10 max-w-2xl text-lg leading-9 text-[#eadcc9]">
           Née de l’héritage du marché Dantokpa à Cotonou, DantokpaLab transforme
           la mémoire du textile africain en créations contemporaines, élégantes
           et intemporelles.
@@ -60,13 +59,13 @@
 
         <div class="flex flex-wrap gap-4">
           <a href="#collection"
-             class="border border-[#d6a96a] bg-[#d6a96a] px-8 py-4 text-xs font-bold uppercase tracking-[0.25em] text-[#241a14] hover:bg-transparent hover:text-[#d6a96a]">
+             class="border border-[#d6a96a] bg-[#d6a96a] px-8 py-4 text-xs font-bold uppercase tracking-[0.25em] text-black hover:bg-transparent hover:text-[#d6a96a]">
             Découvrir
           </a>
 
           <a href="https://www.instagram.com/dantokpalab"
              target="_blank"
-             class="border border-white px-8 py-4 text-xs font-bold uppercase tracking-[0.25em] text-white hover:bg-white hover:text-[#241a14]">
+             class="border border-white px-8 py-4 text-xs font-bold uppercase tracking-[0.25em] text-white hover:bg-white hover:text-black">
             Instagram
           </a>
         </div>
@@ -78,7 +77,7 @@
   <section id="maison" class="px-6 py-28">
     <div class="mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-2">
       <div>
-        <p class="mb-4 text-xs font-bold uppercase tracking-[0.4em] text-[#a06a35]">
+        <p class="mb-4 text-xs font-bold uppercase tracking-[0.4em] text-[#9b6a38]">
           La maison
         </p>
 
@@ -98,14 +97,14 @@
         </p>
       </div>
 
-      <div class="grid gap-5">
-        <img src="IMG_8081.PNG" alt="Pièce DantokpaLab" class="h-[520px] w-full object-cover shadow-2xl" />
+      <div>
+        <img src="IMG_8081.PNG" alt="Création DantokpaLab" class="h-[560px] w-full object-cover shadow-2xl" />
       </div>
     </div>
   </section>
 
   <!-- COLLECTION -->
-  <section id="collection" class="bg-[#241a14] px-6 py-28 text-white">
+  <section id="collection" class="bg-[#17120e] px-6 py-28 text-white">
     <div class="mx-auto max-w-7xl">
       <div class="mb-16 text-center">
         <p class="mb-4 text-xs font-bold uppercase tracking-[0.4em] text-[#d6a96a]">
@@ -118,8 +117,8 @@
       </div>
 
       <div class="grid gap-8 md:grid-cols-3">
-        <div class="group overflow-hidden bg-[#f8f3e8] text-[#241a14]">
-          <img src="IMG_8082.PNG" alt="Adire" class="h-[420px] w-full object-cover transition duration-500 group-hover:scale-105" />
+        <div class="group overflow-hidden bg-[#f7f1e7] text-[#17120e]">
+          <img src="IMG_8082.PNG" alt="Adire" class="h-[430px] w-full object-cover transition duration-500 group-hover:scale-105" />
           <div class="p-8">
             <h3 class="serif mb-3 text-3xl">Adire</h3>
             <p class="leading-7 text-[#5a4638]">
@@ -129,8 +128,8 @@
           </div>
         </div>
 
-        <div class="group overflow-hidden bg-[#f8f3e8] text-[#241a14]">
-          <img src="IMG_8083.PNG" alt="Aso-oke" class="h-[420px] w-full object-cover transition duration-500 group-hover:scale-105" />
+        <div class="group overflow-hidden bg-[#f7f1e7] text-[#17120e]">
+          <img src="IMG_8083.PNG" alt="Aso-oke" class="h-[430px] w-full object-cover transition duration-500 group-hover:scale-105" />
           <div class="p-8">
             <h3 class="serif mb-3 text-3xl">Aso-oke</h3>
             <p class="leading-7 text-[#5a4638]">
@@ -140,8 +139,8 @@
           </div>
         </div>
 
-        <div class="group overflow-hidden bg-[#f8f3e8] text-[#241a14]">
-          <img src="IMG_8084.jpg" alt="Création contemporaine" class="h-[420px] w-full object-cover transition duration-500 group-hover:scale-105" />
+        <div class="group overflow-hidden bg-[#f7f1e7] text-[#17120e]">
+          <img src="IMG_8084.jpg" alt="Silhouette contemporaine" class="h-[430px] w-full object-cover transition duration-500 group-hover:scale-105" />
           <div class="p-8">
             <h3 class="serif mb-3 text-3xl">Silhouettes</h3>
             <p class="leading-7 text-[#5a4638]">
@@ -154,15 +153,15 @@
     </div>
   </section>
 
-  <!-- HERITAGE -->
+  <!-- HERITAGE PERE FILLE -->
   <section id="heritage" class="px-6 py-28">
     <div class="mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-2">
-      <div class="order-2 md:order-1">
-        <img src="IMG_8084 2.jpg" alt="Héritage DantokpaLab" class="h-[620px] w-full object-cover shadow-2xl" />
+      <div>
+        <img src="IMG_0189.JPG" alt="Cakpo Thomas et Oriane Cakpo" class="h-[650px] w-full object-cover shadow-2xl" />
       </div>
 
-      <div class="order-1 md:order-2">
-        <p class="mb-4 text-xs font-bold uppercase tracking-[0.4em] text-[#a06a35]">
+      <div>
+        <p class="mb-4 text-xs font-bold uppercase tracking-[0.4em] text-[#9b6a38]">
           Héritage familial
         </p>
 
@@ -176,19 +175,24 @@
           sacré : celui du textile, de la transmission et de la fierté culturelle.
         </p>
 
+        <p class="mb-6 text-lg leading-9 text-[#5a4638]">
+          Cette aventure familiale relie deux générations autour d’une même
+          vision : faire rayonner les savoir-faire africains à travers une mode
+          contemporaine, élégante et profondément enracinée.
+        </p>
+
         <p class="text-lg leading-9 text-[#5a4638]">
-          Plus qu’une marque, DantokpaLab est une passerelle entre les générations :
-          une mémoire familiale transformée en vision créative, élégante et
-          contemporaine.
+          Plus qu’une marque, DantokpaLab est une mémoire vivante transformée en
+          création.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- EDITORIAL -->
-  <section class="bg-[#efe2cf] px-6 py-28">
+  <!-- MANIFESTE -->
+  <section class="bg-[#e9dcc9] px-6 py-28">
     <div class="mx-auto max-w-5xl text-center">
-      <p class="mb-5 text-xs font-bold uppercase tracking-[0.4em] text-[#a06a35]">
+      <p class="mb-5 text-xs font-bold uppercase tracking-[0.4em] text-[#9b6a38]">
         Manifeste
       </p>
 
@@ -205,7 +209,7 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="bg-[#120d09] px-6 py-24 text-white">
+  <section id="contact" class="bg-black px-6 py-24 text-white">
     <div class="mx-auto max-w-5xl text-center">
       <img src="2.png" alt="Logo DantokpaLab" class="mx-auto mb-8 h-28 w-auto" />
 
@@ -219,13 +223,13 @@
 
       <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
         <a href="mailto:dantokpalab@gmail.com"
-           class="border border-[#d6a96a] bg-[#d6a96a] px-8 py-4 text-xs font-bold uppercase tracking-[0.25em] text-[#120d09] hover:bg-transparent hover:text-[#d6a96a]">
+           class="border border-[#d6a96a] bg-[#d6a96a] px-8 py-4 text-xs font-bold uppercase tracking-[0.25em] text-black hover:bg-transparent hover:text-[#d6a96a]">
           Mail
         </a>
 
         <a href="https://www.instagram.com/dantokpalab"
            target="_blank"
-           class="border border-white px-8 py-4 text-xs font-bold uppercase tracking-[0.25em] text-white hover:bg-white hover:text-[#120d09]">
+           class="border border-white px-8 py-4 text-xs font-bold uppercase tracking-[0.25em] text-white hover:bg-white hover:text-black">
           Instagram
         </a>
       </div>
@@ -233,7 +237,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-[#0b0705] px-6 py-8 text-center text-xs uppercase tracking-[0.25em] text-[#bba88f]">
+  <footer class="bg-[#080604] px-6 py-8 text-center text-xs uppercase tracking-[0.25em] text-[#bba88f]">
     <p>© 2026 DantokpaLab — African Luxury Fashion</p>
     <p class="mt-3 normal-case tracking-normal">Fondé par Cakpo Thomas · Avec Oriane Cakpo</p>
   </footer>
